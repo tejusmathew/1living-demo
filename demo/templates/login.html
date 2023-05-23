@@ -1,0 +1,16 @@
+<h1>Login</h1>
+<div class="parent">
+    <div class="form">
+
+    <form action="" method='POST'>
+    {%csrf_token%}
+    <label for="fname"> Name: </label> 
+        <input type="text" placeholder="Enter your  name" name= 'fname'>
+    <br>
+    <label for="fname">Password:</label>
+    <input type="Password" placeholder="Enter your Password" name= "pass_word">
+    
+    <button type="submit">submit</button>
+    <p><a href="{%url 'Register-page'%}">Create account</a></p>
+    </form>
+    </div></div>
